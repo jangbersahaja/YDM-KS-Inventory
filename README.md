@@ -1,36 +1,188 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📦 Inventory Management System - Kopi Saigon Nu Sentral
 
-## Getting Started
+A modern web-based inventory management system designed to streamline daily stock checks for Kopi Saigon Nu Sentral. This app helps staff quickly count inventory and automatically generates WhatsApp-ready reports for distribution.
 
-First, run the development server:
+## ✨ Features
+
+### 📝 Two Input Modes
+
+- **Normal Mode**: Browse through all items organized by category with search functionality
+- **Quick Mode**: Focus on urgent items or items not yet counted with a progress tracker for faster input during closing time
+
+### 📋 Smart Stock Reporting
+
+- **WhatsApp Format**: Automatically formats stock data into WhatsApp-ready text with emojis and organization
+- **Copy to Clipboard**: One-click copy of formatted report directly to clipboard
+- **Text Export**: Download report as `.txt` file for manual distribution
+- **CSV Export**: Export stock data as `.csv` for record-keeping and analysis
+
+### 💾 Persistent Storage
+
+- All stock counts are automatically saved to browser localStorage
+- Staff can close browser or refresh page without losing data
+- Prepared by (staff name) is remembered for convenience
+
+### 📊 Detailed Views
+
+- Summary card showing total items counted, urgent items flagged, and progress percentage
+- Detailed table view showing all stock counts with status indicators
+- Real-time progress tracker in Quick Mode showing completion percentage
+
+### 🚨 Urgent Item Management
+
+- Items marked as urgent are highlighted throughout the app
+- Automatic identification of zero-stock items
+- Priority restock list generated in WhatsApp report
+
+## 🚀 Getting Started
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Build for production
+npm run build
 
-## Learn More
+# Start production server
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📋 Inventory Categories
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The system tracks stock across 10 categories:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. 🚨 **Priority Restock** - Critical items needed regularly
+2. 📦 **Packaging** - Cups, boxes, bags, wrapping materials
+3. 🧂 **Powder** - Coffee powders, flavoring powders
+4. 🍯 **Flavour/Puree/Davinci** - Syrups, purees, flavorings
+5. 📦 **Others** - Miscellaneous supplies
+6. 🥘 **Kitchen Ingredients** - Food items and basics
+7. 🥫 **Paste/Sauce** - Condiments and sauces
+8. 🥬 **Barang Basah** - Fresh and refrigerated items
+9. 🧼 **Cleaning** - Cleaning supplies and utilities
+10. 🛍️ **Merch** - Branded merchandise and promotional items
 
-## Deploy on Vercel
+## 💡 How to Use
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Step 1: Select Input Mode
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Choose between **Normal Mode** (browse all items) or **Quick Mode** (fast entry)
+- In Quick Mode, use filters to focus on urgent items or uncounted items
+
+### Step 2: Enter Staff Name
+
+- Enter the staff member's name who is conducting the stock check
+- This will appear in the WhatsApp report
+
+### Step 3: Count Inventory
+
+- Enter quantities for each item
+- Items turn green when counted
+- Optionally add notes for special conditions (e.g., "in cabinet", "loose stock")
+
+### Step 4: Generate Report
+
+- Click "Generate Report" to see preview and export options
+- View detailed table of all counts
+- See statistics: total items, urgent items, prepared by
+
+### Step 5: Export Report
+
+- **📋 Copy to Clipboard**: Instantly copy formatted text to send via WhatsApp
+- **💾 Download as Text**: Save as `.txt` file for email or sharing
+- **📊 Download as CSV**: Export data for spreadsheet analysis or record-keeping
+
+## 🔄 Example WhatsApp Report
+
+```
+📦 STOCK KOPI SAIGON NU SENTRAL
+
+Stock Check: 23 July 2026
+Prepared by: Mimie
+
+---
+
+🚨 PRIORITY RESTOCK
+
+1. Pati Kopi – 3 bottle
+2. ValuePride Whipped Cream – 11 boxes ‼️ URGENT
+
+---
+
+📦 PACKAGING
+
+- Hot Cup 12oz – 41 rolls
+- Hot Lid Cup – 40 rolls
+...
+```
+
+## 💾 Data Persistence
+
+- Stock counts are saved to browser **localStorage** in real-time
+- Staff name is remembered
+- Current entry mode (Normal/Quick) is saved
+- Clear all data with the **🗑️** button (requires confirmation)
+
+## 🛠️ Technology Stack
+
+- **Next.js 16** - React framework with server/client components
+- **TypeScript** - Type-safe development
+- **Tailwind CSS 4** - Modern styling
+- **React 19** - Latest React features
+
+## 📁 Project Structure
+
+```
+app/
+  page.tsx              # Main page with state management
+  layout.tsx            # App layout
+  globals.css           # Global styles
+
+components/
+  StockCheckForm.tsx    # Normal mode form component
+  QuickEntryMode.tsx    # Quick mode for fast input
+  StockSummary.tsx      # Report preview and export
+
+lib/
+  inventory-items.ts    # All inventory item definitions
+  csv-utils.ts          # CSV export/import utilities
+
+public/                 # Static assets
+```
+
+## 📝 Notes for Staff
+
+- Use **Quick Mode** during busy closing times for faster input
+- Filter by "Not Yet Counted" to focus on remaining items
+- All data is saved locally - you can take a break and resume later
+- Copy report directly to WhatsApp instead of typing manually
+- Each report includes date and prepared by information for accountability
+
+## 🔮 Future Enhancements
+
+- [ ] CSV import to reload previous stock checks
+- [ ] Low-stock threshold alerts
+- [ ] Photo capture for reference
+- [ ] Multi-location support
+- [ ] Cloud sync across devices
+- [ ] Historical trend analysis
+- [ ] Barcode scanning integration
+
+## 📞 Support
+
+For issues or feature requests, please contact the development team.
+
+---
+
+### Built for Kopi Saigon Nu Sentral | Streamlining Inventory Management

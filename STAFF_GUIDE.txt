@@ -1,0 +1,189 @@
+================================================================================
+📱 QUICK START GUIDE - STOCK CHECK APP
+For Kopi Saigon Nu Sentral Staff
+================================================================================
+
+WHAT'S THIS APP FOR?
+--------------------
+Instead of manually typing stock counts and sending via WhatsApp, this app helps you:
+✅ Count inventory quickly
+✅ Organize by category automatically
+✅ Generate formatted WhatsApp reports instantly
+✅ Save data automatically (won't lose if you close browser)
+
+
+GETTING STARTED (FIRST TIME)
+-----------------------------
+1. Open the app link on your phone or computer
+2. Enter your name in "Prepared by" field
+3. Choose mode:
+   📝 Normal Mode - Browse all items with search
+   ⚡ Quick Mode - See only urgent/uncounted items (FASTER!)
+
+
+NORMAL MODE (Detailed Browsing)
+-------------------------------
+Use this when you have time to carefully review all items.
+
+1. Click on a category name to expand it
+2. Enter quantity for each item
+3. Add notes if needed (e.g., "in cabinet", "loose stock")
+4. Items turn GREEN when counted
+5. Use search to find specific items quickly
+
+
+QUICK MODE - RECOMMENDED FOR CLOSING TIME
+------------------------------------------
+Perfect when you're in a hurry!
+
+Features:
+📊 Progress Bar - See how many items left to count
+🚨 Only Urgent - Filter to see only urgent/critical items first
+⏳ Not Yet Counted - See only items you haven't counted yet
+📈 Live Stats - Track progress in real-time
+
+How to Use:
+1. Tap "Only Urgent Items" button to focus on critical items
+2. Enter quantities (input field auto-focuses for speed)
+3. Once done, tap "Not Yet Counted" to see remaining items
+4. Fill in the rest to get 100% completion
+
+
+GENERATING YOUR REPORT
+----------------------
+After entering all quantities:
+
+1. Click "Generate Report" button
+2. Preview your report (looks like WhatsApp format!)
+3. Choose how to send:
+
+📋 Copy to Clipboard
+   Best for: Sending via WhatsApp immediately
+   How: Click button → Open WhatsApp → Paste in chat → Send!
+   Time: 10 seconds
+
+💾 Download as Text
+   Best for: Saving a copy, forwarding via email
+   Creates: A .txt file on your device
+
+📊 Download as CSV
+   Best for: Record-keeping, analysis, sharing with management
+   Creates: An Excel-readable .csv file
+
+
+WHAT GETS SAVED AUTOMATICALLY?
+-------------------------------
+✅ All your stock counts
+✅ Your name
+✅ Your current mode (Normal/Quick)
+
+No need to worry! Even if you:
+- Close the browser
+- Close the tab
+- Refresh the page
+- Accidentally lose connection
+
+YOUR DATA STAYS SAFE and you can continue where you left off!
+
+
+STARTING OVER (New Stock Check)
+-------------------------------
+Want to start a new stock check?
+
+1. Click the 🗑️ trash icon (top right)
+2. Confirm you want to clear all data
+3. All counts are deleted, ready for new entries
+
+
+ABOUT URGENT ITEMS
+------------------
+Marked with ‼️ in the app
+
+These are items that:
+- Run out quickly
+- Are critical to operations
+- Need special attention
+
+The app automatically highlights them:
+🔴 Red border in Normal Mode
+🔴 Red "Only Urgent" button in Quick Mode
+‼️ Marked in WhatsApp report
+
+
+USING ON MOBILE (RECOMMENDED FOR CLOSING)
+------------------------------------------
+The app works great on phones!
+
+1. Open link on your phone browser
+2. Use Quick Mode for fastest input
+3. Landscape mode = wider input fields (easier!)
+4. Touch the quantity field to focus and type quickly
+5. Copy report and paste straight to WhatsApp
+
+
+COMMON QUESTIONS
+----------------
+
+Q: What if I refresh the page by accident?
+A: No problem! Your data is saved. Just refresh - it's all still there.
+
+Q: Can I add items to the list?
+A: Currently, items are pre-defined. Contact admin if you need new items added.
+
+Q: Which mode is faster?
+A: Quick Mode - it focuses on uncounted items and has a progress bar.
+
+Q: How do I send the report?
+A: After generating report, click "Copy to Clipboard" then paste in WhatsApp chat.
+
+Q: Can multiple people use this at same time?
+A: Currently, it saves to one person's device. Each person should count separately.
+
+
+EXAMPLE REPORT FORMAT
+---------------------
+Here's what your WhatsApp report looks like:
+
+📦 STOCK KOPI SAIGON NU SENTRAL
+
+Stock Check: 23 July 2026
+Prepared by: Mimie
+
+---
+
+🚨 PRIORITY RESTOCK
+
+1. Pati Kopi – 3 bottle
+2. ValuePride Whipped Cream – 11 boxes ‼️ URGENT
+
+---
+
+📦 PACKAGING
+
+- Hot Cup 12oz – 41 rolls
+- Hot Lid Cup – 40 rolls
+...
+
+Ready to copy and paste to WhatsApp instantly! 🎉
+
+
+PRO TIPS
+-------
+✨ Tip 1: Use Quick Mode during busy hours - it's 2x faster!
+
+✨ Tip 2: Enter your name first so you don't forget to add it
+
+✨ Tip 3: Add notes for anything unusual (e.g., "Pati stock in storage room")
+
+✨ Tip 4: Copy report right before meeting ends, send immediately
+
+✨ Tip 5: Download as CSV weekly for historical records
+
+
+NEED HELP?
+---------
+Questions? Contact management for assistance!
+
+Happy stock checking! 📦✨
+
+================================================================================
